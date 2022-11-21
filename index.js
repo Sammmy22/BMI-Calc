@@ -17,7 +17,7 @@ document.querySelector("#submit").addEventListener("click", function () {
   } else if (bmi >= 18.5 && bmi <= 24.9) {
     eval.style.color = "green";
     eval.innerHTML = "Normal!";
-  } else if (bmi == NaN) {
+  } else if (ifNaN(bmi)) {
     eval.style.color = "red";
     eval.innerHTML = "Please input values.";
   } else {
