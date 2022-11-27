@@ -1,13 +1,10 @@
 body {
   font-family: sans-serif;
   text-align: center;
-  height: 100%;
-  background-repeat: no-repeat;
-  background-attachment: fixed;
-  background: linear-gradient(to top left, #ef473e, #cb2d3e);
+  background-image: linear-gradient(to top left, #ef473e, #cb2d3e);
 }
 html {
-  height: 100%;
+  height: 100vh;
 }
 
 #main-box {
