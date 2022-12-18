@@ -17,12 +17,12 @@ document.querySelector("#submit").addEventListener("click", function () {
   } else if (bmi >= 18.5 && bmi <= 24.9) {
     eval.style.color = "green";
     eval.innerHTML = "Normal!";
-  } else if (ifNaN(bmi)) {
+  } else if (bmi < 18.5) {
     eval.style.color = "red";
-    eval.innerHTML = "Please input values.";
-  } else {
-    eval.style.color = "blue";
     eval.innerHTML = "Underweight!";
+  } else if (isNaN(bmi)) {
+    eval.style.color = "red";
+    eval.innerHTML = "Please input proper inputs!";
   }
   result.innerHTML = bmi.toFixed(1);
 });
